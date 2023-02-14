@@ -1,0 +1,27 @@
+
+.menu {
+    height: 50px;
+    min-width: 100vh;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    align-items: center;
+    box-shadow: 0 4px 10px -6px #222;
+}
+
+.link {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 500;
+    font-size: large;
+}
+.link:global(.active) {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    font-weight: 500;
+    font-size: large;
+    cursor: default;
+}
