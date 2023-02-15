@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
-import { NavLink } from 'react-router-dom';
 import css from './movie-list.module.css'
 
 export const MoviesList = ({ movies }) => {
@@ -10,9 +9,9 @@ export const MoviesList = ({ movies }) => {
             <ul className={css.list}>
                 {movies.map(movie => (
                     <li className={css.item} key={movie.id}>
-                        <NavLink className={css.link} to={`/movies/${movie.id}`} state={{ from: location }}>
+                        <a className={css.link} href={`/movies/${movie.id}`} state={{ from: location }}>
                             {movie.title}
-                        </NavLink>
+                        </a>
                     </li>
                 ))}
             </ul>
