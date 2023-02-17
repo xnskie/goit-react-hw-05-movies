@@ -9,7 +9,7 @@ export const MoviesList = ({ movies }) => {
             <ul className={css.list}>
                 {movies.map(movie => (
                     <li className={css.item} key={movie.id}>
-                        <a className={css.link} href={`/movies/${movie.id}`} state={{ from: location }}>
+                        <a className={css.link} href={`/goit-react-hw-05-movies/movies/${movie.id}`} state={{ from: location }}>
                             {movie.title}
                         </a>
                     </li>
